@@ -1,0 +1,130 @@
+body {
+	font-family: Georgia, Helvetica, sans-serif;
+  	/*font-size: 2rem;*/
+  	line-height: 1rem;
+    text-align: center;
+}
+
+.locationBar {
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+
+h1 {
+	font-family: Georgia, serif;
+  	font-size: 3rem;
+  	line-height: 1rem;
+  	font-weight: normal;
+  	text-transform: uppercase;
+  	text-align: center;
+  	padding-top: 4rem;
+  	padding-bottom: 1rem;
+    margin-top: 6rem;
+}
+
+h2 {
+	font-family: Georgia, serif;
+	/*font-style: italic;*/
+  	font-size: 2.3rem;
+  	line-height: 2rem;
+  	font-weight: normal;
+  	text-transform: uppercase;
+  	text-align: center;
+  	padding-top: 1rem;
+  	padding-bottom: 1rem;
+  	border-bottom: 1px solid lightgray;
+    word-wrap: break-word;
+}
+
+h4 {
+	font-family: Georgia, serif;
+  	/*font-size: 3rem;
+  	line-height: 4rem;*/
+  	font-weight: normal;
+  	padding-bottom: 1rem;
+  	padding-top: 1rem;
+  	text-transform: uppercase;
+  	text-align: center;
+    margin-bottom: 2rem;
+}
+
+ul.loc {
+	border-bottom: 1px solid lightgray;
+}
+
+p {
+	/*color: #ffffff;
+	font-size: 2em;*/
+  line-height: 2rem;
+}
+ul {
+	font-family: Georgia;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+    /*the white border between locations*/
+    border-right: 1px solid white;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1.2rem .9rem 1.2rem;
+    text-decoration: none;
+}
+.locationBar ul.loc li.right {
+	float: right;
+	padding: .8rem .8rem;
+}
+
+.locationBar ul.loc li.home {
+  float: left;
+  padding: .8rem 1rem .8rem 1.2rem;
+}
+
+ul.loc li.over {
+	text-transform: uppercase;
+	color: black;
+}
+
+/* Change the link color to #111 (black) on hover */
+ul li.over:hover {
+    background-color: black;
+    color: white;
+}
+
+.contact ul.uno {
+  width: 75%;
+  text-align: center;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.contact ul.uno li {
+  width: 40%;
+  text-align: center;
+}
+
+.contact ul.uno li.primero{
+  padding-right: 4rem;
+  border-right: 2px solid lightgray;
+}
+
+.contact ul.uno li.segundo{
+  padding-left: 4rem;
+}
+
+.contact ul.uno li.segundo p {
+  text-align: left;
+  font-size: 1rem
+}
+
+.contact ul.uno li.segundo p.descrip {
+  text-align: center;
+  font-size: .9rem
+}
