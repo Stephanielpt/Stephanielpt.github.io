@@ -122,6 +122,7 @@ ul li.over:hover {
 .contact ul.uno li.segundo p {
   text-align: left;
   font-size: 1rem
+  border-left: 2px solid lightgray;
 }
 
 .contact ul.uno li.segundo p.descrip {
