@@ -299,5 +299,55 @@
                 </li>
             </ul>
         </div>
+        <div>
+            <h2> See more of my other posts:</h2>
+        </div>
+        <div class = "aboutme">
+            <ul class = "holderoflis">
+                <a href = "blog.html#aeropuerto">
+                <li class = "slider">
+                    <div class="post">
+                        <img src="aeropuerto.JPG" alt="HTML5 Icon" style= "width:70%; height: auto;">
+                        <h2>
+                            Why &nbspj'adore &nbsplos &nbspaeropuertos
+                        </h2>
+                    </div>
+                </li>
+                </a>
+                <a href = "blog.html#escape">
+                <li class = "slider">
+                    <div class="post">
+                        <img src="heaven.jpg" alt="HTML5 Icon" style= "width:70%; height: auto;">
+                        <h2>
+                            Escape &nbspto &nbspNature
+                        </h2>
+                    </div>
+                </li>
+                </a>
+                <!--
+                <li style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </li>
+                -->
+            </ul>
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("slider");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+                }
+                slideIndex++;
+                if (slideIndex> slides.length) {slideIndex = 1} 
+                slides[slideIndex-1].style.display = "block"; 
+                setTimeout(showSlides, 4000); // Change section every 4 seconds
+                }
+            </script>
+        </div>
     </body>
 </html>
