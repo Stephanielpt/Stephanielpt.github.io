@@ -30,7 +30,7 @@ h2 {
   	font-weight: normal;
   	text-transform: uppercase;
   	text-align: center;
-  	padding-top: 1rem;
+  	padding-top: 5rem;
   	padding-bottom: 1rem;
   	border-bottom: 1px solid lightgray;
     word-wrap: break-word;
@@ -124,5 +124,5 @@ text-align: center;
   padding-left: 3rem;
   /*margin-bottom: 5rem;*/
   padding-top: 0rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
 }
