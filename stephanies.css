@@ -30,7 +30,7 @@ h2 {
   	font-weight: normal;
   	text-transform: uppercase;
   	text-align: center;
-  	padding-top: 5rem;
+  	padding-top: 4.2rem;
   	padding-bottom: 1rem;
   	border-bottom: 1px solid lightgray;
     word-wrap: break-word;
@@ -43,11 +43,10 @@ h4 {
   	/*font-size: 3rem;
   	line-height: 4rem;*/
   	font-weight: normal;
-  	padding-bottom: 1rem;
+  	padding-bottom: 0rem;
   	padding-top: 1rem;
   	text-transform: uppercase;
   	text-align: center;
-    margin-bottom: 2rem;
 }
 
 ul.loc {
