@@ -35,6 +35,8 @@ h2 {
   	padding-bottom: 1rem;
   	border-bottom: 1px solid lightgray;
     word-wrap: break-word;
+    margin-right: 12rem;
+    margin-left: 12rem;
 }
 
 h4 {
@@ -128,4 +130,15 @@ ul li.over:hover {
 .contact ul.uno li.segundo p.descrip {
   text-align: center;
   font-size: .9rem
+}
+
+.aboutme {
+  margin: auto;
+}
+
+.aboutme ul.holderoflis {
+  width: 75%;
+  text-align: center;
+  list-style-type: none;
+  display: inline;
 }
