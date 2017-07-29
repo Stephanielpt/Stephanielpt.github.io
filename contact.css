@@ -35,6 +35,8 @@ h2 {
   	padding-bottom: 1rem;
   	border-bottom: 1px solid lightgray;
     word-wrap: break-word;
+    margin-left: 12rem;
+    margin-right: 12rem;
 }
 
 h3 {
@@ -123,4 +125,5 @@ ul li.over:hover {
 .contact ul.uno li.primero{
   padding-right: 4rem;
   border-right: 2px solid lightgray;
+  margin-bottom: 4rem;
 }

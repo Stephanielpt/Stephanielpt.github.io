@@ -104,5 +104,147 @@
                 </li>
             </ul>
         </div>
+        <div>
+            <h2 style = "margin-left: 24rem; margin-right: 24rem;"><i>Some of my posts:</i></h2>
+        </div>
+        <div class = "aboutme">
+            <ul class = "holderoflis">
+                <a href = "blog.html#aeropuerto">
+                <li class = "slider">
+                    <div class="post">
+                        <h2>
+                            Why &nbspj'adore &nbsplos &nbspaeropuertos
+                        </h2>
+                        <img src="aeropuerto.JPG" alt="HTML5 Icon" style= "width:50%; height: auto;">
+                    </div>
+                </li>
+                </a>
+
+                <a href = "hobbies.html#tennis">
+                <li class = "slider">
+                    <div class="post">
+                        <h2>
+                            It &nbsptakes &nbsptwo &nbspto &nbsptennis
+                        </h2>
+                        <img src="tennis.JPG" alt="HTML5 Icon" style= "width:50%; height: auto;">
+                    </div>
+                </li>
+                </a>
+
+                <a href = "blog.html#escape">
+                <li class = "slider">
+                    <div class="post">
+                        <h2>
+                            Escape &nbspto &nbspNature
+                        </h2>
+                        <img src="heaven.jpg" alt="HTML5 Icon" style= "width:50%; height: auto;">
+                    </div>
+                </li>
+                </a>
+
+                <a href = "blog.html#grad">
+                <li class = "slider">
+                    <div class="post">
+                        <h2>
+                            Eastside &nbspHigh &nbspSchool &nbspGraduation
+                        </h2>
+                        <img src="grad.jpg" alt="HTML5 Icon" style= "width:50%; height: auto;">
+                    </div>
+                </li>
+                </a>
+
+                <a href = "technology.html#website">
+                <li class = "slider">
+                    <div class="post">
+                        <h2>
+                            This &nbspwebsite 
+                        </h2>
+                        <img src="website1.jpg" alt="HTML5 Icon" style= "width:50%; height: auto;">
+                    </div>
+                </li>
+                </a>
+
+                <a href = "technology.html#arduino">
+                <li class = "slider">
+                    <div class="post">
+                        <h2>
+                            Arduino &nbspBoards: &nbspSoftware &nbspMeets &nbspHardware 
+                        </h2>
+                        <img src="arduino.JPG" alt="HTML5 Icon" style= "width:50%; height: auto;">
+                    </div>
+                </li>
+                </a>
+
+                <a href = "technology.html#six">
+                <li class = "slider">
+                    <div class="post">
+                        <h2>
+                            Computer &nbspModel &nbspof &nbspa &nbspSix-star &nbspOrbiting System
+                        </h2>
+                        <img src="star.PNG" alt="HTML5 Icon" style= "width:50%; height: auto;">
+                    </div>
+                </li>
+                </a>
+
+                <a href = "hobbies.html#zumba">
+                <li class = "slider">
+                    <div class="post">
+                        <h2>
+                            High &nbspSchool &nbspSwimming
+                        </h2>
+                        <img src="swim.JPG" alt="HTML5 Icon" style= "width:50%; height: auto;">
+                    </div>
+                </li>
+                </a>
+
+                <a href = "hobbies.html#kitchen">
+                <li class = "slider">
+                    <div class="post">
+                        <h2>
+                            In &nbspthe &nbspKitchen
+                        </h2>
+                        <img src="food.png" alt="HTML5 Icon" style= "width:50%; height: auto;">
+                    </div>
+                </li>
+                </a>
+
+                <a href = "hobbies.html#swim">
+                <li class = "slider">
+                    <div class="post">
+                        <h2>
+                            ZUMBA! &nbspESO!
+                        </h2>
+                        <img src="zumba.jpg" alt="HTML5 Icon" style= "width:50%; height: auto;">
+                    </div>
+                </li>
+                </a>
+
+                <a href = "blog.html#codey">
+                <li class = "slider">
+                    <div class="post">
+                        <h2>
+                            STEALING &nbspTHE &nbspASCII &nbspTO &nbspMY &nbspHEART
+                        </h2>
+                        <img src="cody2.JPG" alt="HTML5 Icon" style= "width:50%; height: auto;">
+                    </div>
+                </li>
+                </a>
+            </ul>
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("slider");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+                }
+                slideIndex++;
+                if (slideIndex> slides.length) {slideIndex = 1} 
+                slides[slideIndex-1].style.display = "block"; 
+                setTimeout(showSlides, 2800); // Change section every 4 seconds
+                }
+            </script>
     </body>
 </html>
