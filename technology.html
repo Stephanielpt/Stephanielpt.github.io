@@ -79,6 +79,72 @@
         </div>
         
         <div class="post">
+            <a id = 'codey'></a> 
+            <h2>
+                JAVASCRIPT &nbsp- &nbspTAKE &nbspTWO &nbsp. . . &nbsp AND &nbsp ACTION!
+            </h2>
+            <div class = "aboutme">
+            <ul class = "holderoflis">
+                <li class = "slider">
+                    <img src="hike1.JPG" alt="HTML5 Icon" style= "width:85%; height: auto;">
+                </li>
+                <li class = "slider">
+                    <img src="hike2.JPG" alt="HTML5 Icon" style= "width:85%; height: auto;">
+                </li>
+                <li class = "slider">
+                    <img src="hike3.JPG" alt="HTML5 Icon" style= "width:85%; height: auto;">
+                </li>
+                <li class = "slider">
+                    <img src="hike4.JPG" alt="HTML5 Icon" style= "width:85%; height: auto;">
+                </li>
+                <li class = "slider">
+                    <img src="hike5.JPG" alt="HTML5 Icon" style= "width:85%; height: auto;">
+                </li>
+                
+                <!--
+                <li style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </li>
+                -->
+            </ul>
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("slider");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+                }
+                slideIndex++;
+                if (slideIndex> slides.length) {slideIndex = 1} 
+                slides[slideIndex-1].style.display = "block"; 
+                setTimeout(showSlides, 400); // Change section every 0.4 seconds
+                }
+            </script>
+        </div>
+            <ul>
+                <li class="options">
+                     <p>Technology</p>
+                     <p>August 11, 2017</p>
+                </li>
+                <li class="descrip">
+                    <p style="text-indent: 2.5rem">
+                        This website is like my child, and I can’t believe it has been less than a month since I first “pushed” this website into the world! They grow up so fast! Within the last few weeks, I’ve learned more than I could have imagined. In addition to learning HTML and CSS, because I chose to use GitHub Pages to host my website, I now know how to use GitHub and can use the terminal to navigate my computer.
+                    </p> 
+                    <p style="text-indent: 2.5rem">
+                        Recently I shifted my focus to implementing JavaScript, which I love because it incorporates logical progressions that I have been missing in HTML and also makes my website more dynamic.
+                    </p>
+                    <p style="text-indent: 2.5rem">
+                        Watch out world, my website is on the move!
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="post">
             <a id = 'website'></a>
             <h2>
                 This &nbspwebsite 
