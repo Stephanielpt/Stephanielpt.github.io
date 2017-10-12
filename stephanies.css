@@ -130,3 +130,57 @@ text-align: center;
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
+
+.one a img.uno:hover {
+  width: 85%;
+  height: auto;
+  opacity: .8;
+}
+
+.two a img.dos:hover {
+  width: 85%;
+  height: auto;
+  opacity: .8;
+}
+
+.three a img.tres:hover {
+  width: 85%;
+  height: auto;
+  opacity: .8;
+}
+
+.four a img.cuatro:hover {
+  width: 85%;
+  height: auto;
+  opacity: .8;
+}
+
+.five a img.cinco:hover {
+  width: 85%;
+  height: auto;
+  opacity: .8;
+}
+
+.six a img.sies:hover {
+  width: 85%;
+  height: auto;
+  opacity: .8;
+}
+
+.seven a img.siete:hover {
+  width: 85%;
+  height: auto;
+  opacity: .8;
+}
+
+.eight a img.ocho:hover {
+  width: 85%;
+  height: auto;
+  opacity: .8;
+}
+
+.nine a img.nueve:hover {
+  width: 85%;
+  height: auto;
+  opacity: .8;
+}
