@@ -201,3 +201,58 @@ text-align: center;
   height: auto;
   opacity: .8;
 }
+
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+.one {
+  width: 40%;
+  padding: 2%;
+}
+
+.two {
+  width: 40%;
+  padding: 2%;
+}
+
+.three {
+  width: 40%;
+  padding: 2%;
+}
+
+.four {
+  width: 40%;
+  padding: 2%;
+}
+
+.five {
+  width: 40%;
+  padding: 2%;
+}
+
+.six {
+  width: 40%;
+  padding: 2%;
+}
+
+.seven {
+  width: 40%;
+  padding: 2%;
+}
+
+.eight {
+  width: 40%;
+  padding: 2%;
+}
+
+.nine {
+  width: 40%;
+  padding: 2%;
+}
+
+}
+
+
+
+
+
+
