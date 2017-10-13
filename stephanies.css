@@ -77,6 +77,8 @@ li {
     padding: 1.2rem .9rem 1.2rem;
     text-decoration: none;
 }
+
+
 .locationBar ul.loc li.right {
 	float: right;
 	padding: .8rem .8rem;
@@ -84,8 +86,22 @@ li {
 
 .locationBar ul.loc li.home {
   float: left;
-  padding: .8rem 1rem .8rem 1.2rem;
+  /*padding: .8rem 1rem .8rem 1.2rem;*/
+  padding: 0rem;
+  margin:0rem;
+  width: 3.3rem;
+  height: 3.3rem;
 }
+/*
+.locationBar ul.loc li.home img{
+  float: left;
+  padding: .8rem 1rem .8rem 1.2rem;
+  width: auto;
+  height: 100%;
+}
+*/
+
+
 
 ul.loc li.over {
 	text-transform: uppercase;
@@ -97,6 +113,7 @@ ul li.over:hover {
     background-color: black;
     color: white;
 }
+
 .post {
 text-align: center;
 }
