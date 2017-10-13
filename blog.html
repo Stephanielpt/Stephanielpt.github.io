@@ -11,7 +11,7 @@
             <ul class="loc">
                 <a href="index.html">
                     <li class = "home">
-                        <img src="home.png" alt = "HTML5 Icon" style="width:1.4rem; height:auto;">
+                        <img src="home.png" alt = "HTML5 Icon" style="width:100%; height:100%;" onmouseover="change(this)" onmouseout="changeback(this)">
                     </li>
                 </a>
                 <a href="aboutme.html">
@@ -73,7 +73,17 @@
             </ul>
         </div>
         
+        <script type="text/javascript">
+            function change(homebutton)
+            {
+                homebutton.src='home2.png';
+            } 
 
+            function changeback(homebutton)
+            {
+                homebutton.src='home.png';
+            }
+        </script>
         <div class = "weAre">
             <h1>S T E P H A N I E &nbsp &nbspL A M P O T A N G</h1>
             <h4>M u l t i p o t e n t i a l i t e</h4>
