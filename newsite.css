@@ -1,0 +1,41 @@
+body {
+	font-family: 'Georgia', Helvetica, sans-serif;
+  	/*font-size: 2rem;*/
+  	line-height: 1rem;
+  	margin: 0;
+  	position: relative;
+  	top: 0;
+  	left: 0;
+}
+
+ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+	display: inline;
+}
+.image1 {
+	width: 100%;
+  	position: relative;
+  	top: 0;
+  	left: 0;
+}
+.image2 {
+  	position: absolute;
+  	height: auto; 
+  	padding-bottom: 2rem;
+  	top: 1px;
+  	left: 1px;
+	display: block;
+}
+.image3 {
+  	position: absolute;
+  	height: auto; 
+  	padding-bottom: 2rem;
+  	top: 1px;
+  	right: 1px;
+	display: block;
+}

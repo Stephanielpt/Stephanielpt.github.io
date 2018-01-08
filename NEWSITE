@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stephanie Lampotang</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="newsite.css" media="screen, handheld">
+        <link rel="icon" href="pinkicon.JPG">
+    </head>
+    <body style="margin: 0;">
+        <div class="image1">
+            <img src="orange.JPG" alt="HTML5 Icon" style= "width:100%; height: auto;">
+        </div>
+        <ul>
+            <li class="image2">
+                <img src="NAME.png" alt="HTML5 Icon" style= "width:80%; float: left; top: 1px; left: 1px;">
+            </li>
+            <li class="image3">
+                <img src="havana.png" alt="HTML5 Icon" style= "width:80%; float: right; padding-left: 5rem;">
+            </li>
+        </ul>
+    </body>
+</html>
