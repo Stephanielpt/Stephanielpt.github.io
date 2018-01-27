@@ -147,6 +147,11 @@ text-align: center;
   padding-bottom: 0rem;
 }
 
+.post img {
+  width: 30%;
+  height: auto;
+}
+
 .one a img.uno:hover {
   width: 85%;
   height: auto;
@@ -202,7 +207,7 @@ text-align: center;
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 600px) {
+/*@media only screen and (min-width: 320px) and (max-width: 600px) {
 .one {
   width: 40%;
   padding: 4%;
@@ -248,6 +253,13 @@ text-align: center;
   padding: 4%;
 }
 
+}*/
+
+@media (max-width: 800px) {
+  .post img {
+  width: 50%;
+  height: auto;
+}
 }
 
 
