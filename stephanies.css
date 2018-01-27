@@ -255,11 +255,11 @@ text-align: center;
 
 }*/
 
-@media only screen and (device-width: 800px) {
+@media (max-width: 800px) {
   .post img {
-  width: 50%;
-  height: auto;
-}
+    width: 50%;
+    height: auto;
+  }
 }
 
 
