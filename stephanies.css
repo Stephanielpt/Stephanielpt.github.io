@@ -255,7 +255,7 @@ text-align: center;
 
 }*/
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .post img {
   width: 50%;
   height: auto;
