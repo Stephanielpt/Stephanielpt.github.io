@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-	font-family: Georgia, serif;
+	font-family: 'Playfair Display', serif;
   	font-size: 3rem;
   	line-height: 1rem;
   	font-weight: normal;
@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Georgia', serif;
+	font-family: 'Playfair Display', serif;
 	/*font-style: italic;*/
   	font-size: 2.3rem;
   	line-height: 2rem;
@@ -44,7 +44,7 @@ h2 {
 }
 
 h4 {
-	font-family: 'Georgia', serif;
+	font-family: 'Playfair Display', serif;
   	/*font-size: 3rem;
   	line-height: 4rem;*/
   	font-weight: normal;
@@ -104,11 +104,14 @@ li {
 }
 */
 
-
+.fontch {
+  /*font-family: 'Playfair Display';*/
+}
 
 ul.loc li.over {
 	text-transform: uppercase;
 	color: black;
+  /*font-family: 'Playfair Display';*/
 }
 
 /* Change the link color to #111 (black) on hover */
