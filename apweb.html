@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="apweb.css">
         <link rel="icon" href="pinkicon.JPG">
     </head>
-    <body style="margin: 0;">
+    <body style="margin: 0;" onclick="chBackColor()">
         <div> <p style="margin-top: 10rem; font-size: 3rem; font-family: 'Lora'"> Stephanie Lampotang </p> </div>
         <div> <p> <i> Creator in Los Angeles </i> </p> </div>
         <div> <p> Working on <a href = "technology.html#teach" style="text-decoration: underline; color: black;">TEACH</a>: the world's largest whiteboard.</p> </div>
@@ -57,6 +57,16 @@
             </a>
         </ul>
         </div>
+        <script>
+            var i = 0;
+            function chBackColor() {
+                if(i%4 == 0) {document.body.style.background = '#bfefe3'; i++;}
+                else if(i%4 == 1) {document.body.style.background = '#a1c4fc'; i++;}
+                else if(i%4 == 2) {document.body.style.background = '#fffca5'; i++;}
+                else if(i%4 == 3) {document.body.style.background = '#fcd9e2'; i++;}
 
+            }
+        </script>
+        
     </body>
 </html>
