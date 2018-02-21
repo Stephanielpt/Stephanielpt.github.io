@@ -1,0 +1,19 @@
+body {
+	background-color: #fcd9e2;
+	text-align: center;
+	font-family: 'Raleway';
+}
+
+ul {
+  	list-style-type: none;
+  	display: inline-block;
+  	text-align: center;
+}
+
+li {
+	display: block;
+}
+
+p {
+	font-size: 3rem;
+}
