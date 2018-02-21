@@ -22,37 +22,37 @@
         <ul style="width: 30%; height: auto; margin-left: 28%; margin-right: 30%;">
             <a href = "https://www.linkedin.com/in/stephanielpt/">
                 <li>
-                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "linkedin.png">
+                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "linkedin.png" onmouseover="changelink(this)" onmouseout="changelinkback(this)">
                 </li>
             </a>
             <a href = "https://github.com/Stephanielpt">
                 <li>
-                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "github.png">
+                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "github.png" onmouseover="changegit(this)" onmouseout="changegitback(this)">
                 </li>
             </a>
             <a href = "https://www.facebook.com/stephanie.lampo.3">
                 <li>
-                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "facebook.png">
+                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "facebook.png" onmouseover="changeface(this)" onmouseout="changefaceback(this)">
                 </li>
             </a>
             <a href = "https://www.pinterest.com/stephanielpt/">
                 <li>
-                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "pinterest.png">
+                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "pinterest.png" onmouseover="changepin(this)" onmouseout="changepinback(this)">
                 </li>
             </a>
             <a href = "https://open.spotify.com/user/slampotang/playlist/3PY6lCpvwbKt0tGNpIssOT">
                 <li>
-                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "spotify.png">
+                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "spotify.png" onmouseover="changespot(this)" onmouseout="changespotback(this)">
                 </li>
             </a>
             <a href = "https://www.instagram.com/stephanielptx/">
                 <li>
-                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "instagram.png">
+                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "instagram.png" onmouseover="changeinsta(this)" onmouseout="changeinstaback(this)">
                 </li>
             </a>
             <a href = "https://soundcloud.com/stephanie-lampo">
                 <li>
-                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "soundcloud.png">
+                    <img style="padding: 3%; float: left; display: inline-block; width: 8%;" src = "soundcloud.png" onmouseover="changesound(this)" onmouseout="changesoundback(this)">
                 </li>
             </a>
         </ul>
@@ -64,9 +64,19 @@
                 else if(i%4 == 1) {document.body.style.background = '#a1c4fc'; i++;}
                 else if(i%4 == 2) {document.body.style.background = '#fffca5'; i++;}
                 else if(i%4 == 3) {document.body.style.background = '#fcd9e2'; i++;}
-
             }
         </script>
-        
+        <script type="text/javascript">
+            function changelink(icon)
+            {
+                icon.src='facebook.png';
+            } 
+
+            function changelinkback(icon)
+            {
+                icon.src='linkedin.png';
+            }
+
+        </script>
     </body>
 </html>
