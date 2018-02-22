@@ -11,18 +11,27 @@ body {
 }
 
 .serious p {
-	width:50%; 
-	float: left; 
+	width:50%;
+	float: left;
 }
 
 .silly {
-	width:40%; 
-	float: left; 
+	width:40%;
+	float: left;
+}
+
+.linked {
+	text-decoration: underline;
+	color: black;
+}
+
+.linked:hover {
+	color: #55c2d6;
 }
 
 h1 {
 	padding-top: 1.4rem;
-	font-size: 4.6em; 
+	font-size: 4.6em;
 	font-family: 'Playfair Display', Helvetica, sans-serif;
 	line-height: 1.3em;
 	font-weight: normal;
@@ -39,6 +48,6 @@ li {
 }
 
 p {
-	font-size: .9em; 
+	font-size: .9em;
 	line-height: 1.8em;"
 }
