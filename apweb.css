@@ -18,6 +18,11 @@ p {
 	font-size: 1rem;
 }
 
-p a :hover {
-	color: lightblue;
+.linked {
+	text-decoration: underline;
+	color: black;
+}
+
+.linked:hover {
+	color: #4286f4;
 }
