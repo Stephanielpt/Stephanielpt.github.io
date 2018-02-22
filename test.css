@@ -38,6 +38,10 @@ h1 {
 	padding-bottom: 1rem;
 }
 
+h1:hover {
+	color: #55c2d6;
+}
+
 ul {
 	list-style-type: none;
 	width: 100%;
