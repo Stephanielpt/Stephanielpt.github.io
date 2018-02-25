@@ -26,3 +26,23 @@ p {
 .linked:hover {
 	color: #4286f4;
 }
+
+.wrapper {
+  overflow: hidden;
+}
+
+.bg {
+	background: url("guitar.JPG") repeat-x;
+    height: 500px;
+    width: 5076px;
+	animation: slide 60s linear infinite;
+}
+
+@keyframes .slide {
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
