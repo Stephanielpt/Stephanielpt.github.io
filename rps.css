@@ -18,11 +18,28 @@ p {
 	font-size: 1rem;
 }
 
-.linked {
-	text-decoration: underline;
-	color: black;
+.name {
+	text-align: center;
+	width: 40%;
+	padding: 3%;
+	float: left;
+	display: inline-block;
+}
+
+.you {
+	width: 45%;
+	float: left;
+}
+.opponent {
+	width: 45%;
+	float: right;
 }
 
 .linked:hover {
 	color: #4286f4;
+}
+
+img {
+	width: 100%;
+	height: auto;
 }
