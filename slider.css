@@ -25,9 +25,9 @@ body {background-color: #0D1B2B;}
 .slide-image img {width: 24vw; cursor: pointer; padding: 3rem 0rem 0rem 3rem;}
 .slide-content {width: 50%; float: left; color: #fff; display: inline; padding:7rem 5rem 5rem 3rem;}
 
-/*.slide-contento {width: 50%; float: right; color: #fff; display: inline; padding:7rem 5rem 5rem 3rem;}
+.slide-contento {width: 50%; float: right; color: #fff; display: inline; padding:7rem 5rem 5rem 3rem;}
 .slide-imageo {height: 24vw; width: 30%; float: right; display: inline;}
-.slide-imageo img {width: 24vw; cursor: pointer; padding: 3rem 0rem 0rem 3rem;} */
+.slide-imageo img {width: 24vw; cursor: pointer; padding: 3rem 0rem 0rem 3rem;}
 
 .slide-date {color: #0a8acb; font-size: 1.1vw; font-weight: 400; letter-spacing: 0.1vw; padding-bottom: 1.4vw;}
 .slide-title {font-size: 1.2vw; font-weight: 400; letter-spacing: 0.1vw; line-height: 1.55vw; padding-bottom: 1.8vw;}
