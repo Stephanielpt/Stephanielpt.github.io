@@ -17,13 +17,16 @@ button {
 	color: white;
     background-color: Transparent;
     background-repeat:no-repeat;
-    border: 1px solid white;
+    border: 2px solid white;
     cursor:pointer;
     overflow: hidden;
     outline:none;
     position: absolute;
-    top: 80%;
-    left: 50%;
+    top: 65%;
+    left: 45.5%;
+    width: 10%;
+    height: 5%;
+    font-size: .7em;
 }
 
 /*.holder {
