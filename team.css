@@ -1,0 +1,66 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+body {
+	font-family: 'Didact Gothic';
+	color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/*.inl {
+	width: 30%;
+	display: inline;
+	float: left;
+}*/
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+    opacity: .5;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+}
