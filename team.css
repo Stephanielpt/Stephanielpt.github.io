@@ -13,11 +13,52 @@ body {
     background-color: black;
 }
 
-/*.inl {
-	width: 30%;
-	display: inline;
-	float: left;
+/*.holder {
+	position: absolute;
+	top: 10px;
 }*/
+
+.inl1 {
+	width: 8%;
+	display: inline;
+	float: right;
+	text-align: center;
+	position: absolute;
+	top: 10px;
+	right: 240px;
+}
+
+.inl2 {
+	width: 8%;
+	display: inline;
+	float: right;
+	text-align: center;
+	position: absolute;
+	top: 10px;
+	right: 168px;
+}
+
+.inl3 {
+	width: 8%;
+	display: inline;
+	float: right;
+	text-align: center;
+	position: absolute;
+	top: 10px;
+	right: 88px;
+	opacity: 1;
+}
+
+.inl4 {
+	width: 8%;
+	display: inline;
+	float: right;
+	text-align: center;
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	opacity: 1;
+}
 
 img {
     padding: 0;
@@ -35,20 +76,6 @@ img {
     left: 16px;
 }
 
-/* Top left text */
-.top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-
-/* Top right text */
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
-
 /* Bottom right text */
 .bottom-right {
     position: absolute;
@@ -59,8 +86,8 @@ img {
 /* Centered text */
 .centered {
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5em;
+    font-size: 4.5em;
 }
