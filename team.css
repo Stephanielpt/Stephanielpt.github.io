@@ -27,6 +27,23 @@ button {
     width: 10%;
     height: 5%;
     font-size: .7em;
+    float: inherit;
+    display: inline;
+    margin-right: 2rem;
+}
+
+.button1 {
+    top: 65%;
+    left: 39%;
+}
+
+.button2 {
+    top: 65%;
+    left: 51%;
+}
+
+.buttondiv {
+    float: left;
 }
 
 /*.holder {
