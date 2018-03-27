@@ -101,9 +101,12 @@ img {
 
 /* Centered text */
 .centered {
+	width: 100%;
     position: absolute;
-    top: 47%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4.5em;
+    padding: 0;
+    margin-top: 0;
 }
