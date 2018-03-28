@@ -59,6 +59,7 @@ button {
 	position: absolute;
 	top: 10px;
 	right: 240px;
+    opacity: 0.7;
 }
 
 .inl2 {
@@ -69,6 +70,7 @@ button {
 	position: absolute;
 	top: 10px;
 	right: 168px;
+    opacity: 0.7;
 }
 
 .inl3 {
@@ -79,7 +81,7 @@ button {
 	position: absolute;
 	top: 10px;
 	right: 88px;
-	opacity: 1;
+    opacity: 0.7;
 }
 
 .inl4 {
@@ -90,7 +92,23 @@ button {
 	position: absolute;
 	top: 10px;
 	right: 8px;
-	opacity: 1;
+    opacity: 0.7;
+}
+
+.inl1:hover {
+    opacity: 1;
+}
+
+.inl2:hover {
+    opacity: 1;
+}
+
+.inl3:hover {
+    opacity: 1;
+}
+
+.inl4:hover {
+    opacity: 1;
 }
 
 img {
