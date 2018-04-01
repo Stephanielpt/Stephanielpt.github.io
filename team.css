@@ -192,4 +192,10 @@ p {
     font-size: 1em;
     text-align: center;
     color: #595959;
+    line-height: 2em;
+    width: 70%;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
