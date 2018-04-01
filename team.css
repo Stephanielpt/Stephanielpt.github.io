@@ -187,3 +187,9 @@ p {
     padding-right: 4%;
     padding-bottom: 4rem;
 }
+
+.mission {
+    font-size: 1em;
+    text-align: center;
+    color: #595959;
+}
