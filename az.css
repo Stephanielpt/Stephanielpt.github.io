@@ -10,6 +10,7 @@ body {
 
 .nav {
     width: 100%;
+    /*position: absolute;*/
 }
 
 .name {
@@ -35,6 +36,46 @@ body {
     width: 100%;
     height: 2rem;
     line-height: 1em;
+    margin-bottom: 7rem;
+}
+
+.post {
+    width: 64%;
+    margin-left: 18%;
+    margin-right: 18%;
+    border: solid 1px #eeeeee;
+    height: 22rem;
+    display: block;
+    margin-bottom: 4rem;
+    font-family: 'Times';
+}
+
+.rtext {
+     width: 40%;
+     display: inline;
+     float: left;
+     margin: 5%;
+     margin-top: 3%;
+}
+
+.datetime {
+    font-size: 0.7em;
+    color: #898989;
+}
+
+.title {
+    color: black;
+    font-size: 1.6em;
+    font-weight: 100;
+}
+
+.preview {
+    font-size: 0.95em;
+    color: #898989;
+    line-height: 1.7em;
+    border-bottom: solid 1px lightgray;
+    padding-bottom: 2rem;
+    /*text-indent: 2em;*/
 }
 
 .inl1 {
