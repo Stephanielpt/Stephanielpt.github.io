@@ -50,6 +50,10 @@ body {
     font-family: 'Times';
 }
 
+.post:hover .title {
+    color: #baa191;
+}
+
 .rtext {
      width: 40%;
      display: inline;
