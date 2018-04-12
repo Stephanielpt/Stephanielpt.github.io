@@ -1,0 +1,79 @@
+body {
+	font-family: 'Raleway';
+	color: black;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.nav {
+    width: 100%;
+}
+
+.name {
+    font-family: 'Heebo';
+    width: 100%;
+    color: #e86b20;
+    font-size: 1.7em;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.inl1 {
+    padding-top: 1.2rem;
+    font-size: 0.8em;
+	width: 7%;
+	display: inline;
+	float: left;
+	text-align: center;
+    padding-left: 35.5%;
+    opacity: 0.35;
+}
+
+.inl2 {
+    padding-top: 1.2rem;
+    font-size: 0.8em;
+	width: 7%;
+	display: inline;
+	float: left;
+	text-align: center;
+    opacity: 0.35;
+}
+
+.inl3 {
+    padding-top: 1.2rem;
+    font-size: 0.8em;
+	width: 7%;
+	display: inline;
+	float: left;
+	text-align: center;
+    padding-right: 0.5%;
+    opacity: 0.35;
+}
+
+.inl4 {
+    padding-top: 1.2rem;
+    font-size: 0.8em;
+	width: 7%;
+	display: inline;
+	float: left;
+	text-align: center;
+    padding-right: 33%;
+    opacity: 0.35;
+}
+
+.inl1:hover {
+    opacity: 1;
+}
+
+.inl2:hover {
+    opacity: 1;
+}
+
+.inl3:hover {
+    opacity: 1;
+}
+
+.inl4:hover {
+    opacity: 1;
+}
