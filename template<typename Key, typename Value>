@@ -1,0 +1,330 @@
+template<typename Key, typename Value>
+void BinarySearchTree<Key, Value>::switcher(Node<Key, Value>* &inner, Node<Key, Value>* &leaf, Node<Key, Value>* &parental, Node<Key, Value>* &root) 
+{
+	// deal with parental
+	if(inner->getLeft() == nullptr)
+	{
+		if(inner->getRight()->getKey() != leaf->getKey())
+		{
+			parental = leaf->getParent();
+		}
+		else {
+			parental = leaf;
+		}
+	}
+	// same
+	else if(inner->getRight() == nullptr)
+	{
+		if(inner->getLeft()->getKey() != leaf->getKey())
+		{
+			parental = leaf->getParent();
+		}
+		else {
+			parental = leaf;
+		}
+	}
+	// has both children
+	else 
+	{
+		if((inner->getRight()->getKey() != leaf->getKey()) && (inner->getLeft()->getKey() != leaf->getKey()))
+		{
+			parental = leaf->getParent();
+		}
+		else {
+			parental = leaf;
+		}
+	}
+	// rest of process
+	if(inner->getParent() != nullptr) {
+		if(inner->getKey() < inner->getParent()->getKey()) {
+			inner->getParent()->setLeft(leaf);
+			//leaf->setParent(inner->getParent()); //added
+		}
+		if(inner->getKey() > inner->getParent()->getKey()) {
+			inner->getParent()->setRight(leaf);
+			//leaf->setParent(inner->getParent()); //added
+		}
+	}
+	else 
+	{
+		root = leaf;
+		leaf->setParent(nullptr); //added
+	}
+
+	if(inner->getLeft() != nullptr) {
+		if(inner->getLeft()->getKey() == leaf->getKey()) //direct connection to the left
+		{
+			Node<Key, Value>* leafl = leaf->getLeft();
+			Node<Key, Value>* leafr = leaf->getRight();
+			// if(leaf->getRight() == nullptr)
+			// {
+			// 	leaf->setRight(nullptr);
+			// }
+			// else {
+			// 	leaf->setRight(nullptr);
+			// }
+			leaf->setParent(inner->getParent());
+			leaf->setRight(inner->getRight());
+			leaf->setLeft(inner);
+			if(leaf->getRight() != nullptr)
+			{
+				leaf->getRight()->setParent(leaf);
+			}
+			inner->setParent(leaf);
+			inner->setRight(leafr);
+			inner->setLeft(leafl);
+			if(leafl != nullptr)
+			{
+				leafl->setParent(inner);
+			}
+			if(leafr != nullptr)
+			{
+				leafr->setParent(inner);
+			}
+		}
+		// else
+		// {
+		// 	if(leaf->getKey() < leaf->getParent()->getKey()) {
+		// 		leaf->getParent()->setLeft(nullptr);
+		// 	}
+		// 	if(leaf->getKey() > leaf->getParent()->getKey()) {
+		// 		leaf->getParent()->setRight(nullptr);
+		// 	}
+		// }
+	}
+	else if(inner->getRight() != nullptr) {
+		if(inner->getRight()->getKey() == leaf->getKey())
+		{
+			//this is my mistake because what if you have children
+			Node<Key, Value>* leafl = leaf->getLeft();
+			Node<Key, Value>* leafr = leaf->getRight();
+			
+			leaf->setParent(inner->getParent());
+			leaf->setLeft(inner->getLeft());
+			leaf->setRight(inner);
+			if(leaf->getLeft() != nullptr)
+			{
+				leaf->getLeft()->setParent(leaf);
+			}
+			inner->setParent(leaf);
+			inner->setRight(leafr);
+			inner->setLeft(leafl);
+			if(leafl != nullptr)
+			{
+				leafl->setParent(inner);
+			}
+			if(leafr != nullptr)
+			{
+				leafr->setParent(inner);
+			}
+		}
+		// else
+		// {
+		// 	inner->getRight()->setParent(leaf);
+		// 	leaf->setRight(inner->getRight());
+		// 	if(leaf->getKey() < leaf->getParent()->getKey()) {
+		// 		leaf->getParent()->setLeft(nullptr);
+		// 	}
+		// 	if(leaf->getKey() > leaf->getParent()->getKey()) {
+		// 		leaf->getParent()->setRight(nullptr);
+		// 	}
+		// }
+	}
+	// neither of the children have a direct relationship so do a general
+	else {
+		leaf->setParent(inner->getParent());
+		Node<Key, Value>* leafl = leaf->getLeft();
+		Node<Key, Value>* leafr = leaf->getRight();
+		Node<Key, Value>* leafp = leaf->getParent();
+		
+		leaf->setParent(inner->getParent());
+		leaf->setLeft(inner->getLeft());
+		leaf->setRight(inner->getRight());
+		if(leaf->getLeft() != nullptr)
+		{
+			leaf->getLeft()->setParent(leaf);
+		}
+		if(leaf->getRight() != nullptr)
+		{
+			leaf->getRight()->setParent(leaf);
+		}
+		inner->setRight(leafr);
+		inner->setLeft(leafl);
+		inner->setParent(leafp);
+		if(leafp != nullptr)
+		{
+			if(leafp->getKey() > inner->getKey())
+			{
+				leafp->setLeft(inner);
+			}
+			if(leafp->getKey() < inner->getKey())
+			{
+				leafp->setRight(inner);
+			}
+		}
+		if(leafl != nullptr)
+		{
+			leafl->setParent(inner);
+		}
+		if(leafr != nullptr)
+		{
+			leafr->setParent(inner);
+		}
+	}
+
+	leaf->setHeight(inner->getHeight()); 
+}
+/**
+* An remove method to remove a specific key from a Binary Search Tree. The tree may not remain balanced after
+* removal.
+*/
+template<typename Key, typename Value>
+void BinarySearchTree<Key, Value>::remove(const Key& key)
+{
+	if(mRoot == nullptr)
+	{
+		return;
+	}
+	// what if were trying to remove the single mroot - then no parent
+	if(mRoot->getKey() == key && mRoot->getHeight() == 1)
+	{
+		delete mRoot;
+		mRoot = nullptr;
+		return;
+	}
+	// grab the node 
+	Node<Key, Value>* toRemove = internalFind(key);
+	if(toRemove == nullptr)
+	{
+		return;
+	}
+	// parent of whatever you deleted
+	Node<Key, Value>* parental = nullptr;
+	if(toRemove->getHeight() == 1) // if it's a leaf node - simple cut
+	{
+		//set parental
+		parental = toRemove->getParent();
+		//remove leaf now
+		if(toRemove->getKey() < toRemove->getParent()->getKey())
+		{
+			toRemove->getParent()->setLeft(nullptr);
+		}
+		if(toRemove->getKey() > toRemove->getParent()->getKey())
+		{
+			toRemove->getParent()->setRight(nullptr);
+		}
+		delete toRemove;
+		toRemove = nullptr;
+		//return;
+	}
+	else // must switch with pred or succ then remove
+	{
+		Node<Key, Value>* repl = toRemove;
+		if(toRemove->getLeft() == nullptr) //no left child - go w/ successor
+		{
+			//find successor and store in repl
+			repl = repl->getRight();
+			while(repl->getLeft() != nullptr)
+			{
+				repl = repl->getLeft();
+			}
+		}
+		else {
+			//find predeccessor and store in repl
+			repl = repl->getLeft();
+			while(repl->getRight() != nullptr)
+			{
+				repl = repl->getRight();
+			}
+		}
+
+		//switch toRemove and replacement and set parental and maybe mRoot
+		//dont forget to do root stuff
+		if(toRemove->getLeft() == nullptr && toRemove->getRight() != nullptr)
+		{
+			//can just promote like a LinkedList
+			if(toRemove->getParent() == nullptr)
+			{
+				mRoot = toRemove->getRight();
+				parental = mRoot;
+				mRoot->setParent(nullptr);
+			}
+			else {
+				if(toRemove->getKey() < toRemove->getParent()->getKey())
+				{
+					toRemove->getParent()->setLeft(toRemove->getRight());
+				}
+				else {
+					toRemove->getParent()->setRight(toRemove->getRight());
+				}
+				toRemove->getRight()->setParent(toRemove->getParent());
+				parental = toRemove->getParent();
+			}
+
+		}
+		else if(toRemove->getRight() == nullptr && toRemove->getLeft() != nullptr)
+		{
+			//can just promote like a LinkedList
+			if(toRemove->getParent() == nullptr)
+			{
+				mRoot = toRemove->getLeft();
+				parental = mRoot;
+				mRoot->setParent(nullptr);
+			}
+			else {
+				if(toRemove->getKey() < toRemove->getParent()->getKey())
+				{
+					toRemove->getParent()->setLeft(toRemove->getLeft());
+				}
+				else {
+					toRemove->getParent()->setRight(toRemove->getLeft());
+				}
+				toRemove->getLeft()->setParent(toRemove->getParent());
+				parental = toRemove->getParent();
+			}
+		}
+		else {
+			switcher(toRemove, repl, parental, mRoot);
+		}
+		
+		// std::cout << "parental should be 2" << std::endl;
+		// std::cout << parental->getKey() << std::endl;
+		if((toRemove->getLeft() == nullptr) && (toRemove->getRight() == nullptr))
+		{
+			delete toRemove;
+			toRemove = nullptr;
+		}
+		else {
+			remove(key);
+		}
+	}
+	//now alter the height 
+	//start at the parental
+	while(parental != nullptr)
+	{
+		if(parental->getLeft() == nullptr && parental->getRight() == nullptr)
+		{
+			parental->setHeight(1);
+		}
+		else if(parental->getLeft() == nullptr)
+		{
+			parental->setHeight(parental->getRight()->getHeight() + 1);
+		}
+		else if(parental->getRight() == nullptr)
+		{
+			parental->setHeight(parental->getLeft()->getHeight() + 1);
+			// std::cout << "In the code: " << parental->getLeft()->getHeight() + 1 << std::endl;
+		}
+		else {
+			if(parental->getLeft()->getHeight() > parental->getRight()->getHeight())
+			{
+				parental->setHeight(parental->getLeft()->getHeight() + 1);
+			}
+			else
+			{
+				parental->setHeight(parental->getRight()->getHeight() + 1);
+			}
+		}
+		parental = parental->getParent();
+	}
+}
