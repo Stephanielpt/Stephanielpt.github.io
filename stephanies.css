@@ -1,7 +1,8 @@
 body {
-	font-family: 'Georgia', Helvetica, sans-serif;
-  	/*font-size: 2rem;*/
+	  font-family: 'Georgia', Helvetica, sans-serif;
+  	font-size: 13px;
   	line-height: 1rem;
+
 }
 
 .locationBar {
@@ -11,8 +12,8 @@ body {
 }
 
 h1 {
-	font-family: 'Playfair Display', serif;
-  	font-size: 3rem;
+	 font-family: 'Playfair Display', serif;
+  	font-size: 2.5rem;
   	line-height: 1rem;
   	font-weight: normal;
   	text-transform: uppercase;
@@ -29,7 +30,7 @@ h1 {
 h2 {
 	font-family: 'Playfair Display', serif;
 	/*font-style: italic;*/
-  	font-size: 2.3rem;
+  	font-size: 2rem;
   	line-height: 2rem;
   	font-weight: normal;
   	text-transform: uppercase;
