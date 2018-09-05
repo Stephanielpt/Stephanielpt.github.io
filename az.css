@@ -28,6 +28,7 @@ body {
     padding-top: 5rem;
     animation-name: example;
     animation-duration: 4s;
+    animation-iteration-count:infinite;
 }
 
 .photos {
