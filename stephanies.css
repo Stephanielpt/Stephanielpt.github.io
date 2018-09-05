@@ -213,16 +213,7 @@ text-align: center;
   opacity: .8;
 }
 
-@keyframes bordercol {
-    0%   {border: solid 5px #42f4b0;}
-    50%  {border: solid 20px #41ebf4;}
-    100% {border: solid 5px #42f4b0;}
-}
-
 .profilepicr {
-    animation-name: bordercol;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes rotate {
