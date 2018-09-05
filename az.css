@@ -13,6 +13,12 @@ body {
     /*position: absolute;*/
 }
 
+/* The animation code */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
 .name {
     font-family: 'Heebo';
     width: 100%;
@@ -20,6 +26,8 @@ body {
     font-size: 1.7em;
     text-align: center;
     padding-top: 5rem;
+    animation-name: example;
+    animation-duration: 4s;
 }
 
 .photos {

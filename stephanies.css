@@ -214,6 +214,24 @@ text-align: center;
   opacity: .8;
 }
 
+.profilepicr {
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+    to { 
+        -webkit-transform: rotateY(360deg);
+    }
+}
+
+.profilepicr:hover {
+  -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
 
 /*@media only screen and (min-width: 320px) and (max-width: 600px) {
 .one {
