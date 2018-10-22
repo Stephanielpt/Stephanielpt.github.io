@@ -1,0 +1,64 @@
+body {
+	font-size: 120px;
+	color: black;
+	text-align: left;
+	animation-name: bgcchange;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bgcchange {
+    0%   {background-color: red;}
+    50%  {background-color: #d4ccff;}
+    100% {background-color: red;}
+}
+
+
+@keyframes bouncerotate {
+    0%   {position: absolute; left: 0px; bottom: 0px; -webkit-transform: rotateY(0deg);}
+    50%  {position: absolute; left: 700px; bottom: 400px; -webkit-transform: rotateY(180deg);}
+    100% {position: absolute; left: 0px; bottom:0px; -webkit-transform: rotateY(0deg);}
+}
+
+.luz {
+	width: 400px;
+	height: auto;
+	position:fixed;
+	top:500px;
+	right:0px;
+	transform: rotate(90deg);
+
+}
+
+
+.lesley {
+	width: 50%;
+	height: auto;
+	animation-name: bouncerotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+    to { 
+        -webkit-transform: rotateY(360deg);
+    }
+}
+
+.susan {
+	font-size: 16px;
+	color: white;
+}
+/*.lesley:hover {
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}*/
+
+.priscilla {
+	color: blue;
+}
