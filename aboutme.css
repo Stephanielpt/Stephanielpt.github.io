@@ -26,7 +26,7 @@ h1 {
 h2 {
 	font-family: Georgia, serif;
 	/*font-style: italic;*/
-  	font-size: 2.3rem;
+  	font-size: 2rem;
   	line-height: 2rem;
   	font-weight: normal;
   	text-transform: uppercase;
@@ -41,8 +41,8 @@ h2 {
 
 h4 {
 	font-family: Playfair Display, serif;
-  	/*font-size: 3rem;
-  	line-height: 4rem;*/
+    /*font-size: 3rem;*/
+  	/*line-height: 4rem;*/
   	font-weight: normal;
   	padding-bottom: 1rem;
   	padding-top: 1rem;
@@ -96,6 +96,7 @@ li {
 ul.loc li.over {
 	text-transform: uppercase;
 	color: black;
+    font-size: .81rem;
 }
 
 /* Change the link color to #111 (black) on hover */
